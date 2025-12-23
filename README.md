@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## What is this!?
+
+This is a small, front-end–only hotel booking interface built by the renowned Dave Kerr with **Next.js**, **React**, **Zustand**, and **Tailwind CSS**. Users can create bookings via a form, view them in a list/dashboard, and select a booking to see a detailed view.
+
+It is difficult to know which bits to put the most effort into in a task like this but I had fun, I have kept away from using AI for this except for looking up answers when I got stuck as some of the stack was new to me and I wanted to use it as a learning experience.
+
+## Features
+
+- The homepage is a list view of existing bookings listed by date order
+- Form for adding new bookings
+- Booking details page to view full details
+- Responsive design
+
+
+## Trade offs/Limitations
+- Validation is very basic on the new guest form
+- I haven't done anything about making sure dates are in the future, past dates will still show in the list of bookings
+- The content could be better with headings and explanations of what each page is
+- I could have created a mock api rather than create the seed data straight in the zustand store
+- Haven't created any tests either
+
+## Time spent
+More than 3 hours, I've been tinkering with this on and off for a couple of days, I could keep going but I'm starting to run out of time now.
+
+---
+
+
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js
+- npm (or your preferred package manager)
 
+### Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run locally
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open the app at:
+- `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Lint
+```bash
+npm run lint
+```
 
-## Learn More
+### Build (production)
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
