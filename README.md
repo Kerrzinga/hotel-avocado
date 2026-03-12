@@ -1,31 +1,33 @@
 
-## What is this!?
+# Hotel Booking Demo
 
-This is a small, front-end–only hotel booking interface built by the renowned Dave Kerr with **Next.js**, **React**, **Zustand**, and **Tailwind CSS**. Users can create bookings via a form, view them in a list/dashboard, and select a booking to see a detailed view.
+A front-end hotel booking interface built with **Next.js**, **React**, **Zustand**, and **Tailwind CSS**.
 
-It is difficult to know which bits to put the most effort into in a task like this but I had fun, I have kept away from using AI for this except for looking up answers when I got stuck as some of the stack was new to me and I wanted to use it as a learning experience.
+🔗 **[Live demo](https://your-vercel-url-here.vercel.app)** ← *(update this once deployed)*
+
+Built as a portfolio project to demonstrate working with a modern React stack. I deliberately avoided using AI to write the code — I wanted the experience of working through a new stack myself, only looking things up when stuck.
 
 ## Features
 
-- The homepage is a list view of existing bookings listed by date order
-- Form for adding new bookings
-- Booking details page to view full details
-- Responsive design
+- Dashboard listing all bookings, sorted by check-in date
+- Form for adding new bookings with client-side validation
+- Booking detail page
+- Responsive layout (mobile and desktop)
+- State managed with Zustand
 
+## Tech
 
-## Trade offs/Limitations
-- Validation is very basic on the new guest form
-- I haven't done anything about making sure dates are in the future, past dates will still show in the list of bookings
-- The content could be better with headings and explanations of what each page is
-- I could have created a mock api rather than create the seed data straight in the zustand store
-- Haven't created any tests either
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Zustand](https://zustand-demo.pmnd.rs/) for state management
+- [Tailwind CSS](https://tailwindcss.com/) for styling
 
-## Time spent
-More than 3 hours, I've been tinkering with this on and off for a couple of days, I could keep going but I'm starting to run out of time now.
+## Trade-offs and known limitations
 
----
-
-
+- Validation is basic — no check that check-in dates are in the future
+- Seed data lives directly in the Zustand store rather than a mock API layer
+- No tests written
+- UI copy is minimal — pages would benefit from better headings and context
 
 ## Getting Started
 
@@ -56,4 +58,5 @@ npm run lint
 npm run build
 npm run start
 ```
+
 
