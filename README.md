@@ -3,7 +3,7 @@
 
 A front-end hotel booking interface built with **Next.js**, **React**, **Zustand**, and **Tailwind CSS**.
 
-🔗 **[Live demo](https://your-vercel-url-here.vercel.app)** ← *(update this once deployed)*
+🔗 **[Live demo](https://daves-hotel-booking-demo.vercel.app)**
 
 Built as a portfolio project to demonstrate working with a modern React stack. I deliberately avoided using AI to write the code — I wanted the experience of working through a new stack myself, only looking things up when stuck.
 
