@@ -2,14 +2,13 @@
 
 import Card from "@/app/components/Card";
 import LabeledInput from "@/app/components/LabeledInput";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useGuestStore } from "@/store/useGuestStore";
-import router from "next/router";
 import { useState } from "react";
 
 export default function Home() {
   const [errors, setErrors] = useState({});
-
+  const router = useRouter();
 
   const addGuest = (e) => {
     e.preventDefault();

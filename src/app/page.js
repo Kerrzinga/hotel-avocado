@@ -39,7 +39,7 @@ export default function Home() {
             ))}
           </tbody>
         </table>
-        <div className={(guests.length % 2) === 0 ? "bg-lime-200" : "bg-amber-100" + " p-2"}>
+        <div className={`p-2 ${ (guests.length % 2) === 0 ? "bg-lime-200" : "bg-amber-100" }`}>
           <LinkBtn href="/new-guest" className="w-full sm:w-auto">Add new booking</LinkBtn>
         </div>
       </Card>

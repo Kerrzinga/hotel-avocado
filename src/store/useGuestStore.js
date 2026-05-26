@@ -10,7 +10,7 @@ export const useGuestStore = create((set) => ({
   addGuest: (newGuest) =>
     set((state) => {
       const lastId = state.guests.length
-        ? state.guests[state.guests.length - 1].id
+        ? Math.max(...state.guests.map((g) => g.id))
         : 0;
 
       const guestToAdd = { id: lastId + 1, ...newGuest };
